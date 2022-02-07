@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  /* background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44); */
+  background: linear-gradient(to left, #743ad5, #d53a9d);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+h3 {
+  background: linear-gradient(to left, #743ad5, #d53a9d);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  /* font-size: 3rem; */
+  opacity: 0.8;
+}
+
+h2 {
+  background: linear-gradient(to left, #743ad5, #d53a9d);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  opacity: 0.8;
+}
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .glass {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+} */
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1.7rem;
+  z-index: 5;
+  backdrop-filter: blur(1.5rem);
+  display: flex;
+}
+.circle1,
+.circle2 {
+  background: white;
+  /* min-height: 80vh; */
+  /* width: 60%; */
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+}
+.circle1 {
+  top: 5%;
+  right: 10%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 2rem;
+}
+.link {
+  cursor: pointer;
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem, 3rem;
+  align-items: center;
+}
+.links {
+  margin-top: -20px;
+}
+
+.link h2 {
+  padding: 0rem, 2rem;
+}
+.games {
+  flex: 2;
+}
+
+.pro {
+  cursor: pointer;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  margin: 5px;
+  color: white;
+  /* height: 10%; */
+  padding: 3rem;
+  text-align: center;
+  margin-bottom: 35px;
+  /* display: flex; */
+  position: relative;
+}
+
+.pro h2 {
+  color: white;
+  width: 100%;
+  font-weight: 600;
+}
+/* .pro img {
+  position: absolute;
+  top: 27%;
+  right: 10%;
+  padding
+  : 2rem, 2rem;
+} */
+.user p {
+  cursor: default;
+  text-align: center;
+}
+.user h3 {
+  cursor: pointer;
+  text-align: center;
+}
+
+/* ****************************************GAMES */
+.status {
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.games {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.212)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 1.5rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.712);
+  /* justify-content: left; */
+}
+
+.card-info h2 {
+  cursor: pointer;
+  /*   text-align: right; */
+  /*   width: 100%; */
+  margin-left: 2rem;
+  /*  white-space: nowrap; */
+  /*  overflow: visible; */
+}
+.card-info p {
+  /*   text-align: right; */
+  /*   width: 100%; */
+  text-align: center;
+  margin-top: 40px;
+  margin-left: -6.3rem;
+  white-space: nowrap;
+  overflow: visible;
+}
+/* .progress {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 100%;
+  height: 20%;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: visible;
+}
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 60%;
+} */
+.card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.percentage {
+  font-weight: bold;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#valorant {
+  margin-left: 5rem;
+}
+#assassin {
+  margin-left: 7rem;
+}
+#milesmorales {
+  margin-left: 10rem;
+}
+#assassinp {
+  margin-left: -12.3rem;
+}
+#milesmoralesp {
+  margin-left: -10em;
+}
+/* @media (max-width: 720px) {
+  
+
+
+} */
